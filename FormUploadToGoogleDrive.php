@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" || isset($_GET['code']) || (isset($_SESS
 	$client->setClientSecret('GhfiDs0mEfXcwq9cb7IE404U');
 	
 	//set the URL of this same file & set the same url in google developer console.
-	$client->setRedirectUri('<https://newsgittest.herokuapp.com/LinkUploadToGoogleDrive.php');
+	$client->setRedirectUri('https://newsgittest.herokuapp.com/LinkUploadToGoogleDrive.php');
 	
 	$client->setScopes(array('https://www.googleapis.com/auth/drive.file'));
 	session_start();
