@@ -39,7 +39,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" || isset($_GET['code']) || (isset($_SESS
 	$client->setClientId('171412916432-ta4on5cld7ldlp46d18khe7icf4qomn4.apps.googleusercontent.com');
 	$client->setClientSecret('GhfiDs0mEfXcwq9cb7IE404U');
 	//set the URL of this same file & set the same url in google developer console.
-	$client->setRedirectUri('https://accounts.google.com/o/oauth2/auth?response_type=code&redirect_uri=https%3A%2F%2Fnewsgittest.herokuapp.com%2FLinkUploadToGoogleDrive.php&client_id=171412916432-ta4on5cld7ldlp46d18khe7icf4qomn4.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fplus.me&access_type=online&approval_prompt=auto');
+	$client->setRedirectUri('https://newsgittest.herokuapp.com/LinkUploadToGoogleDrive.php');
 	$client->setScopes(array('https://www.googleapis.com/auth/drive.file'));
 	
 	
