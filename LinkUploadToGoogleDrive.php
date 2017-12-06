@@ -36,10 +36,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST" || isset($_GET['code']) || (isset($_SESS
 	//---------------------------------------------------------------
 	$client = new Google_Client();
 	// Get your credentials from the console
-	$client->setClientId('<CLIENT_ID>');
-	$client->setClientSecret('<CLIENT_SECRET>');
+	$client->setClientId('826366382786-s1uk9fmb20ahvug6ci11pr2lfl7u28kg.apps.googleusercontent.com');
+	$client->setClientSecret('cyTtj7OOg7B6jsnp28ti_Az1');
 	//set the URL of this same file & set the same url in google developer console.
-	$client->setRedirectUri('<URL_OF_THIS_PAGE_MUST_BE_SAME_TO_Redirect_URIs_IN_GOOGLE_DEVELOPER_CONSOLE>');
+	$client->setRedirectUri('urn:ietf:wg:oauth:2.0:oob');
 	$client->setScopes(array('https://www.googleapis.com/auth/drive.file'));
 	
 	
